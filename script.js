@@ -1,5 +1,14 @@
+// Get the hambuger menu
+const hambuger = document.getElementById;("hambuger");
+const navLinks = document.getElementById;("navLinks");
+hambuger .addEventListener ("click", function () {
+    navLinks .classList. toggle("active");
+    const isOpen = navLinks.classList.contains("active")
+    hambuger .setAttribute("aria-expanded", isOpen)
+    hambuger .textcontent = isOpen ? "x" : "button class hambuger"});
+
 // Get the Order Now button
-const orderBtn = document.getElementById("orderBtn");
+const orderBtn = document.getElementById;("orderBtn");
 
 // Add click event
 orderBtn.addEventListener("click", function () {
